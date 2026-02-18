@@ -3,91 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delicious Bites Menu</title>
+    <title>Utawala Eats - Delicious Food</title>
+    <!-- Link your CSS file -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <h1>Delicious Bites Menu</h1>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <div class="logo">
+        <img class="logo-img" src="Assets/logo.png" height="100" width="100" />
+        <h1>Utawala Eats</h1>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </div>
+      </nav>
+    </header>
 
-    <h2>Appetizers</h2>
-    <ul>
-      <li>
-        <strong>Caprese Salad</strong>
-        <p>
-          Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.
-        </p>
-      </li>
+    <!-- Featured Section -->
+    <section class="featured">
+      <div class="featured-item">
+        <!-- Item 1 -->
+        <img src="dish1.jpg" alt="Dish 1" />
+        <h3>Dish Name</h3>
+      </div>
+      <div class="featured-item">
+        <!-- Item 2 -->
+        <img src="dish2.jpg" alt="Dish 2" />
+        <h3>Dish Name</h3>
+      </div>
+      <div class="featured-item">
+        <!-- Item 3 -->
+        <img src="dish3.jpg" alt="Dish 3" />
+        <h3>Dish Name</h3>
+      </div>
+      <div class="featured-item">
+        <!-- Item 4 -->
+        <img src="dish4.jpg" alt="Dish 4" />
+        <h3>Dish Name</h3>
+      </div>
+    </section>
 
-      <li>
-        <strong>Stuffed Mushrooms</strong>
-        <p>
-          Button mushrooms filled with herbed cream cheese and baked until
-          golden brown.
-        </p>
-      </li>
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+      <div class="menu-category">
+        <h2>Appetizers</h2>
+        <ul>
+          <li>Spring Rolls</li>
+          <li>Garlic Bread</li>
+          <li>Chicken Wings</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Main Courses</h2>
+        <ul>
+          <li>Grilled Chicken</li>
+          <li>Beef Burger</li>
+          <li>Veggie Pasta</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Desserts</h2>
+        <ul>
+          <li>Chocolate Cake</li>
+          <li>Ice Cream Sundae</li>
+          <li>Fruit Salad</li>
+        </ul>
+      </div>
+    </section>
 
-      <li>
-        <strong>Crispy Chicken Wings</strong>
-        <p>
-          Spicy, oven-baked wings served with a side of cool ranch dipping
-          sauce.
-        </p>
-      </li>
-    </ul>
+    <!-- Location Section -->
+    <section class="location" id="location">
+      <h2>Find Us</h2>
+      <p>123 Delicious Street, Utawala, Nairobi, Kenya</p>
+      <div class="map">
+        <!-- Placeholder for map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.986206447584!2d36.9402!3d-1.2614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a0f6ef7bb31%3A0x8f20e4a42b0f0f7c!2sUtawala%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1617077612345!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
 
-    <h2>Main Courses</h2>
-    <ul>
-      <li>
-        <strong>Grilled Salmon</strong>
-        <p>
-          Salmon fillet seasoned and grilled to perfection, served with lemon
-          butter sauce.
-        </p>
-      </li>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-      <li>
-        <strong>Classic Beef Burger</strong>
-        <p>
-          Juicy beef patty topped with cheddar cheese, lettuce, tomato, and
-          house sauce in a toasted bun.
-        </p>
-      </li>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-      <li>
-        <strong>Creamy Alfredo Pasta</strong>
-        <p>
-          Fettuccine pasta tossed in a rich parmesan cream sauce with grilled
-          chicken strips.
-        </p>
-      </li>
-    </ul>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-    <h2>Desserts</h2>
-    <ul>
-      <li>
-        <strong>Chocolate Fondue</strong>
-        <p>
-          Assorted fruits and marshmallows served with rich chocolate fondue.
-        </p>
-      </li>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-      <li>
-        <strong>Vanilla Cheesecake</strong>
-        <p>
-          Classic baked cheesecake with a buttery biscuit crust and strawberry
-          topping.
-        </p>
-      </li>
-
-      <li>
-        <strong>Caramel Ice Cream Sundae</strong>
-        <p>
-          Vanilla ice cream drizzled with warm caramel sauce and topped with
-          whipped cream and nuts.
-        </p>
-      </li>
-    </ul>
-
-    <p><a href="contact.html">Contact us for reservations</a></p>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Utawala Eats. All rights reserved.</p>
+    </footer>
   </body>
 </html>
